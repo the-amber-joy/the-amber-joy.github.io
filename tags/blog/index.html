@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en-US" data-astro-cid-tge3q7ae> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>
+  (function () {
+    const STORAGE_KEY = "astro-theme";
+    let theme = null;
+
+    if (typeof localStorage !== "undefined") {
+      theme = localStorage.getItem(STORAGE_KEY);
+    }
+
+    const prefersDark =
+      typeof matchMedia !== "undefined" &&
+      matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = theme ? theme === "dark" : prefersDark;
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script><script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js");
+    });
+  }
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#8B5CF6"><link rel="apple-touch-icon" href="/icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amber's Stuff"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Amber's Stuff" href="https://theamberjoy.com/rss.xml"><meta name="generator" content="Astro v6.3.1"><link rel="canonical" href="https://theamberjoy.com/tags/blog/"><title>Tag: blog</title><meta name="title" content="Tag: blog"><meta name="description" content="Posts tagged #blog"><meta property="og:type" content="website"><meta property="og:url" content="https://theamberjoy.com/tags/blog/"><meta property="og:title" content="Tag: blog"><meta property="og:description" content="Posts tagged #blog"><meta property="og:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://theamberjoy.com/tags/blog/"><meta property="twitter:title" content="Tag: blog"><meta property="twitter:description" content="Posts tagged #blog"><meta property="twitter:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><link rel="stylesheet" href="/_astro/Header.D7pBWrmn.css">
+<style>main[data-astro-cid-tge3q7ae]{max-width:640px;margin:0 auto;padding:2rem 1.25rem 4rem}.page-title[data-astro-cid-tge3q7ae]{font-size:1.75rem;font-weight:700;margin:0 0 .5rem;display:flex;align-items:center;gap:.5rem;color:var(--text-primary)}.page-title[data-astro-cid-tge3q7ae]:before{content:"";width:4px;height:1.75rem;background:linear-gradient(180deg,var(--accent) 0%,var(--accent) 55%,var(--accent-secondary) 100%);border-radius:2px}.page-subtitle[data-astro-cid-tge3q7ae]{font-size:.95rem;color:var(--text-muted);margin:0 0 2rem;padding-left:.5rem}.back-link[data-astro-cid-tge3q7ae]{display:inline-flex;align-items:center;gap:.375rem;color:var(--accent);text-decoration:none;font-size:.9rem;margin-bottom:1.5rem;padding:.5rem;border-radius:.375rem;transition:background .2s ease}.back-link[data-astro-cid-tge3q7ae]:hover{background:color-mix(in srgb,var(--accent) 8%,transparent)}.post-list[data-astro-cid-tge3q7ae]{list-style-type:none;margin:0;padding:0}.post-item[data-astro-cid-tge3q7ae]{padding:.4rem 0;border-radius:.375rem;transition:background .2s ease}.post-item[data-astro-cid-tge3q7ae]:hover{background:color-mix(in srgb,var(--accent) 6%,transparent)}.post-link[data-astro-cid-tge3q7ae]{display:flex;align-items:baseline;gap:1rem;text-decoration:none;color:var(--text-primary);padding:.375rem .5rem;border-radius:.375rem;transition:color .2s ease}.post-link[data-astro-cid-tge3q7ae]:hover{color:var(--accent)}.post-date[data-astro-cid-tge3q7ae]{font-size:.85rem;color:var(--text-muted);min-width:80px;flex-shrink:0}.post-title[data-astro-cid-tge3q7ae]{font-size:.95rem;margin:0}.post-tags[data-astro-cid-tge3q7ae]{display:flex;gap:.375rem;flex-wrap:wrap;flex-shrink:0}.post-tag[data-astro-cid-tge3q7ae]{font-size:.7rem;color:var(--text-muted);padding:.125rem .375rem;background:var(--bg-secondary);border-radius:.25rem}html.dark .page-title[data-astro-cid-tge3q7ae]{color:var(--text-primary)}html.dark .page-title[data-astro-cid-tge3q7ae]:before{background:linear-gradient(180deg,var(--accent-light) 0%,var(--accent-light) 40%,var(--accent-secondary) 100%)}html.dark .page-subtitle[data-astro-cid-tge3q7ae]{color:var(--text-muted)}html.dark .back-link[data-astro-cid-tge3q7ae]{color:var(--accent-light)}html.dark .back-link[data-astro-cid-tge3q7ae]:hover{background:color-mix(in srgb,var(--accent-light) 10%,transparent)}html.dark .post-link[data-astro-cid-tge3q7ae]{color:var(--text-primary);text-decoration:none}html.dark .post-link[data-astro-cid-tge3q7ae]:hover{color:var(--accent-light);text-decoration:none}html.dark .post-item[data-astro-cid-tge3q7ae]:hover{background:color-mix(in srgb,var(--accent-light) 8%,transparent)}html.dark .post-date[data-astro-cid-tge3q7ae]{color:var(--text-muted)}html.dark .post-tag[data-astro-cid-tge3q7ae]{color:var(--text-muted);background:var(--bg-secondary)}
+</style></head> <body data-astro-cid-tge3q7ae> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <div class="nav-left" data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Amber&#39;s Stuff</a></h2> </div> <div class="nav-center" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/blog" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/tags" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Tags </a> <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a> </div> <div class="nav-right" data-astro-cid-3ef6ksr2> <site-search data-astro-cid-qk3db3zz="true"> <button data-open-modal disabled aria-label="Search articles" aria-keyshortcuts="Control+K" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <span class="search-label" aria-hidden="true" data-astro-cid-qk3db3zz>Search</span> <kbd class="search-shortcut" style="display: none;" data-astro-cid-qk3db3zz> <kbd data-astro-cid-qk3db3zz>Ctrl</kbd><kbd data-astro-cid-qk3db3zz>K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" data-astro-cid-qk3db3zz> <div class="dialog-frame" data-astro-cid-qk3db3zz> <div class="search-container" data-astro-cid-qk3db3zz> <form class="search-form" role="search" data-astro-cid-qk3db3zz> <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <input type="text" class="search-input" placeholder="Search..." autocomplete="off" spellcheck="false" data-astro-cid-qk3db3zz> <button type="button" class="search-clear" style="display: none;" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-qk3db3zz></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-qk3db3zz></line> </svg> </button> </form> <div class="results-info" style="display: none;" data-astro-cid-qk3db3zz> <span class="results-count" data-astro-cid-qk3db3zz></span> results for <mark class="search-term" data-astro-cid-qk3db3zz></mark> </div> <div class="search-results" data-astro-cid-qk3db3zz> <div class="search-loading" style="display: none;" data-astro-cid-qk3db3zz> <div class="spinner" data-astro-cid-qk3db3zz></div> <span data-astro-cid-qk3db3zz>Loading...</span> </div> <div class="search-empty" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>No results found for "<span class="search-term" data-astro-cid-qk3db3zz></span>"</p> </div> <div class="search-error" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>Search is unavailable. Please try again later.</p> </div> <ul class="results-list" data-astro-cid-qk3db3zz></ul> </div> </div> </div> </dialog> </site-search> <script>
+  (() => {
+    const openBtn = document.querySelector("button[data-open-modal]");
+    const shortcut = openBtn?.querySelector(".search-shortcut");
+    if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+    const platformKey = shortcut.querySelector("kbd");
+    if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+      platformKey.textContent = "⌘";
+      openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+    }
+    shortcut.style.display = "";
+  })();
+</script> <script type="module" src="/_astro/SearchModal.astro_astro_type_script_index_0_lang.qN23F6-x.js"></script> <button id="menu-toggle" class="nav-btn mobile-only" title="Menu" aria-label="Toggle menu" aria-expanded="false" data-astro-cid-3ef6ksr2> <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-3ef6ksr2></line> </svg> </button> <button id="push-toggle" class="nav-btn" title="Enable notifications" aria-label="Toggle notifications" aria-pressed="false" hidden data-astro-cid-3ef6ksr2> <svg id="push-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" data-astro-cid-3ef6ksr2></path> <path d="M13.73 21a2 2 0 0 1-3.46 0" data-astro-cid-3ef6ksr2></path> </svg> </button> <button id="theme-toggle" class="nav-btn" title="Toggle theme" aria-label="Toggle theme" data-astro-cid-3ef6ksr2> <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <circle cx="12" cy="12" r="5" data-astro-cid-3ef6ksr2></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-3ef6ksr2></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-3ef6ksr2></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-3ef6ksr2></line> </svg> </button> </div> </nav> </header> <script type="module">const s=document.getElementById("theme-toggle"),c=document.getElementById("theme-icon"),l="astro-theme",a='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',d='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';function o(){return document.documentElement.classList.contains("dark")}function i(){c&&(c.innerHTML=o()?a:d)}function m(){const e=o()?"light":"dark";document.documentElement.classList.toggle("dark",e==="dark"),typeof localStorage<"u"&&localStorage.setItem(l,e),i(),document.dispatchEvent(new CustomEvent("ecThemeChange")),document.dispatchEvent(new Event("themeChange"))}i();s?.addEventListener("click",m);const t=document.getElementById("menu-toggle"),n=document.querySelector(".nav-center");t?.addEventListener("click",()=>{const e=n?.classList.toggle("show");t.setAttribute("aria-expanded",String(!!e))});n?.addEventListener("click",e=>{e.target.closest("a")&&(n.classList.remove("show"),t?.setAttribute("aria-expanded","false"))});</script> <script>(function(){const PUSH_WORKER_URL = "https://amber-blog-push.the-amber-joy.workers.dev";
+const VAPID_PUBLIC_KEY = "BO1XQeprhawoEt5nFaFIi2Xu5BGEvWm13t5eFMszV6I7-xmU1QW_Qx9MwC_tUhyLj6EjIN5JKWJpxJFBsURZTsk";
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+    const base64 = (base64String + padding)
+      .replace(/-/g, "+")
+      .replace(/_/g, "/");
+    const rawData = atob(base64);
+    return Uint8Array.from([...rawData].map((c) => c.charCodeAt(0)));
+  }
+
+  async function getSubscription() {
+    if (!("serviceWorker" in navigator)) return null;
+    const registration = await navigator.serviceWorker.ready;
+    return registration.pushManager.getSubscription();
+  }
+
+  function updatePushButton(pushToggle, isSubscribed) {
+    pushToggle.setAttribute("aria-pressed", String(isSubscribed));
+    pushToggle.title = isSubscribed
+      ? "Disable notifications"
+      : "Enable notifications";
+    pushToggle.classList.toggle("active", isSubscribed);
+  }
+
+  async function subscribeToPush() {
+    const registration = await navigator.serviceWorker.ready;
+    const subscription = await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+    });
+
+    await fetch(`${PUSH_WORKER_URL}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subscription }),
+    });
+  }
+
+  async function unsubscribeFromPush(subscription) {
+    await fetch(`${PUSH_WORKER_URL}/unsubscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ endpoint: subscription.endpoint }),
+    });
+
+    await subscription.unsubscribe();
+  }
+
+  async function initPushToggle() {
+    const pushToggle = document.getElementById("push-toggle");
+    if (!pushToggle) return;
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+
+    pushToggle.hidden = false;
+
+    const existing = await getSubscription();
+    updatePushButton(pushToggle, !!existing);
+
+    pushToggle.addEventListener("click", async () => {
+      const subscription = await getSubscription();
+
+      if (subscription) {
+        await unsubscribeFromPush(subscription);
+        updatePushButton(pushToggle, false);
+        return;
+      }
+
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") return;
+
+      await subscribeToPush();
+      updatePushButton(pushToggle, true);
+    });
+  }
+
+  initPushToggle();
+})();</script> <main data-astro-cid-tge3q7ae> <a href="/tags/" class="back-link" data-astro-cid-tge3q7ae>← Back to tags</a> <h1 class="page-title" data-astro-cid-tge3q7ae>#blog</h1> <p class="page-subtitle" data-astro-cid-tge3q7ae>2 posts</p> <ul class="post-list" data-astro-cid-tge3q7ae> <li class="post-item" data-astro-cid-tge3q7ae> <a href="/blog/first-post/" class="post-link" data-astro-cid-tge3q7ae> <span class="post-date" data-astro-cid-tge3q7ae>09/27/2026</span> <h3 class="post-title" data-astro-cid-tge3q7ae>Hi! This is my blog</h3> <div class="post-tags" data-astro-cid-tge3q7ae> <span class="post-tag" data-astro-cid-tge3q7ae>#intro</span><span class="post-tag" data-astro-cid-tge3q7ae>#blog</span>  </div> </a> </li><li class="post-item" data-astro-cid-tge3q7ae> <a href="/blog/push-notifications/" class="post-link" data-astro-cid-tge3q7ae> <span class="post-date" data-astro-cid-tge3q7ae>09/28/2026</span> <h3 class="post-title" data-astro-cid-tge3q7ae>Push Notifications...</h3> <div class="post-tags" data-astro-cid-tge3q7ae> <span class="post-tag" data-astro-cid-tge3q7ae>#blog</span><span class="post-tag" data-astro-cid-tge3q7ae>#tech</span>  </div> </a> </li> </ul> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2026 The Amber Joy
+</footer> <div class="social-links" data-astro-cid-sz7xmlte>   <a href="/rss.xml" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>RSS Feed</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>RSS Feed</title> <path d="M4 11a9 9 0 0 1 9 9" data-astro-cid-sz7xmlte></path> <path d="M4 4a16 16 0 0 1 16 16" data-astro-cid-sz7xmlte></path> <circle cx="5" cy="19" r="1" data-astro-cid-sz7xmlte></circle> </svg> </a> <a href="mailto:hello@theamberjoy.com" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Email Me</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>Email Me</title> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-astro-cid-sz7xmlte></path> <polyline points="22,6 12,13 2,6" data-astro-cid-sz7xmlte></polyline> </svg> </a> </div> </body></html>
