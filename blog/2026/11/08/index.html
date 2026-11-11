@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="en-US"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>
+  (function () {
+    const STORAGE_KEY = "astro-theme";
+    let theme = null;
+
+    if (typeof localStorage !== "undefined") {
+      theme = localStorage.getItem(STORAGE_KEY);
+    }
+
+    const prefersDark =
+      typeof matchMedia !== "undefined" &&
+      matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = theme ? theme === "dark" : prefersDark;
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script><script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js");
+    });
+  }
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#8B5CF6"><link rel="apple-touch-icon" href="/icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amber's Stuff"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Amber's Stuff" href="https://theamberjoy.com/rss.xml"><meta name="generator" content="Astro v6.3.1"><link rel="canonical" href="https://theamberjoy.com/blog/2026/11/08/"><title>Good election, bad sleep</title><meta name="title" content="Good election, bad sleep"><meta name="description" content="I think I have a lot to process"><meta name="date" content="2026-11-08"><meta property="og:type" content="website"><meta property="og:url" content="https://theamberjoy.com/blog/2026/11/08/"><meta property="og:title" content="Good election, bad sleep"><meta property="og:description" content="I think I have a lot to process"><meta property="og:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://theamberjoy.com/blog/2026/11/08/"><meta property="twitter:title" content="Good election, bad sleep"><meta property="twitter:description" content="I think I have a lot to process"><meta property="twitter:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><style>.draft-badge[data-astro-cid-s3jkptqn]{display:inline-flex;align-items:center;flex-shrink:0;padding:.125rem .4rem;background-color:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd;border-radius:999px;font-size:.65rem;line-height:1;font-weight:700;letter-spacing:.04em;text-transform:uppercase}html.dark .draft-badge[data-astro-cid-s3jkptqn]{background-color:#2e1065;color:#c4b5fd;border-color:#6d28d9}.future-badge[data-astro-cid-7bozttt3]{display:inline-flex;align-items:center;flex-shrink:0;padding:.125rem .4rem;background-color:#fce7f3;color:#be185d;border:1px solid #f9a8d4;border-radius:999px;font-size:.65rem;line-height:1;font-weight:700;letter-spacing:.04em;text-transform:uppercase}html.dark .future-badge[data-astro-cid-7bozttt3]{background-color:#500724;color:#f9a8d4;border-color:#be185d}
+</style>
+<link rel="stylesheet" href="/_astro/Header.D7pBWrmn.css">
+<link rel="stylesheet" href="/_astro/_..QS1jzVn0.css"></head> <body> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <div class="nav-left" data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Amber&#39;s Stuff</a></h2> </div> <div class="nav-center" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/blog" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/tags" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Tags </a> <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a> </div> <div class="nav-right" data-astro-cid-3ef6ksr2> <site-search data-astro-cid-qk3db3zz="true"> <button data-open-modal disabled aria-label="Search articles" aria-keyshortcuts="Control+K" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <span class="search-label" aria-hidden="true" data-astro-cid-qk3db3zz>Search</span> <kbd class="search-shortcut" style="display: none;" data-astro-cid-qk3db3zz> <kbd data-astro-cid-qk3db3zz>Ctrl</kbd><kbd data-astro-cid-qk3db3zz>K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" data-astro-cid-qk3db3zz> <div class="dialog-frame" data-astro-cid-qk3db3zz> <div class="search-container" data-astro-cid-qk3db3zz> <form class="search-form" role="search" data-astro-cid-qk3db3zz> <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <input type="text" class="search-input" placeholder="Search..." autocomplete="off" spellcheck="false" data-astro-cid-qk3db3zz> <button type="button" class="search-clear" style="display: none;" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-qk3db3zz></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-qk3db3zz></line> </svg> </button> </form> <div class="results-info" style="display: none;" data-astro-cid-qk3db3zz> <span class="results-count" data-astro-cid-qk3db3zz></span> results for <mark class="search-term" data-astro-cid-qk3db3zz></mark> </div> <div class="search-results" data-astro-cid-qk3db3zz> <div class="search-loading" style="display: none;" data-astro-cid-qk3db3zz> <div class="spinner" data-astro-cid-qk3db3zz></div> <span data-astro-cid-qk3db3zz>Loading...</span> </div> <div class="search-empty" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>No results found for "<span class="search-term" data-astro-cid-qk3db3zz></span>"</p> </div> <div class="search-error" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>Search is unavailable. Please try again later.</p> </div> <ul class="results-list" data-astro-cid-qk3db3zz></ul> </div> </div> </div> </dialog> </site-search> <script>
+  (() => {
+    const openBtn = document.querySelector("button[data-open-modal]");
+    const shortcut = openBtn?.querySelector(".search-shortcut");
+    if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+    const platformKey = shortcut.querySelector("kbd");
+    if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+      platformKey.textContent = "⌘";
+      openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+    }
+    shortcut.style.display = "";
+  })();
+</script> <script type="module" src="/_astro/SearchModal.astro_astro_type_script_index_0_lang.qN23F6-x.js"></script> <button id="menu-toggle" class="nav-btn mobile-only" title="Menu" aria-label="Toggle menu" aria-expanded="false" data-astro-cid-3ef6ksr2> <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-3ef6ksr2></line> </svg> </button> <button id="push-toggle" class="nav-btn" title="Enable notifications" aria-label="Toggle notifications" aria-pressed="false" hidden data-astro-cid-3ef6ksr2> <svg id="push-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" data-astro-cid-3ef6ksr2></path> <path d="M13.73 21a2 2 0 0 1-3.46 0" data-astro-cid-3ef6ksr2></path> </svg> </button> <button id="theme-toggle" class="nav-btn" title="Toggle theme" aria-label="Toggle theme" data-astro-cid-3ef6ksr2> <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <circle cx="12" cy="12" r="5" data-astro-cid-3ef6ksr2></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-3ef6ksr2></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-3ef6ksr2></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-3ef6ksr2></line> </svg> </button> </div> </nav> </header> <script type="module">const s=document.getElementById("theme-toggle"),c=document.getElementById("theme-icon"),l="astro-theme",a='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',d='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';function o(){return document.documentElement.classList.contains("dark")}function i(){c&&(c.innerHTML=o()?a:d)}function m(){const e=o()?"light":"dark";document.documentElement.classList.toggle("dark",e==="dark"),typeof localStorage<"u"&&localStorage.setItem(l,e),i(),document.dispatchEvent(new CustomEvent("ecThemeChange")),document.dispatchEvent(new Event("themeChange"))}i();s?.addEventListener("click",m);const t=document.getElementById("menu-toggle"),n=document.querySelector(".nav-center");t?.addEventListener("click",()=>{const e=n?.classList.toggle("show");t.setAttribute("aria-expanded",String(!!e))});n?.addEventListener("click",e=>{e.target.closest("a")&&(n.classList.remove("show"),t?.setAttribute("aria-expanded","false"))});</script> <script>(function(){const PUSH_WORKER_URL = "https://amber-blog-push.the-amber-joy.workers.dev";
+const VAPID_PUBLIC_KEY = "BO1XQeprhawoEt5nFaFIi2Xu5BGEvWm13t5eFMszV6I7-xmU1QW_Qx9MwC_tUhyLj6EjIN5JKWJpxJFBsURZTsk";
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+    const base64 = (base64String + padding)
+      .replace(/-/g, "+")
+      .replace(/_/g, "/");
+    const rawData = atob(base64);
+    return Uint8Array.from([...rawData].map((c) => c.charCodeAt(0)));
+  }
+
+  async function getSubscription() {
+    if (!("serviceWorker" in navigator)) return null;
+    const registration = await navigator.serviceWorker.ready;
+    return registration.pushManager.getSubscription();
+  }
+
+  function updatePushButton(pushToggle, isSubscribed) {
+    pushToggle.setAttribute("aria-pressed", String(isSubscribed));
+    pushToggle.title = isSubscribed
+      ? "Disable notifications"
+      : "Enable notifications";
+    pushToggle.classList.toggle("active", isSubscribed);
+  }
+
+  async function subscribeToPush() {
+    const registration = await navigator.serviceWorker.ready;
+    const subscription = await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+    });
+
+    await fetch(`${PUSH_WORKER_URL}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subscription }),
+    });
+  }
+
+  async function unsubscribeFromPush(subscription) {
+    await fetch(`${PUSH_WORKER_URL}/unsubscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ endpoint: subscription.endpoint }),
+    });
+
+    await subscription.unsubscribe();
+  }
+
+  async function initPushToggle() {
+    const pushToggle = document.getElementById("push-toggle");
+    if (!pushToggle) return;
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+
+    pushToggle.hidden = false;
+
+    const existing = await getSubscription();
+    updatePushButton(pushToggle, !!existing);
+
+    pushToggle.addEventListener("click", async () => {
+      const subscription = await getSubscription();
+
+      if (subscription) {
+        await unsubscribeFromPush(subscription);
+        updatePushButton(pushToggle, false);
+        return;
+      }
+
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") return;
+
+      await subscribeToPush();
+      updatePushButton(pushToggle, true);
+    });
+  }
+
+  initPushToggle();
+})();</script> <div class="page-container"> <main> <article> <header class="article-header"> <h1 class="article-title"> Good election, bad sleep   </h1> <p class="article-description">I think I have a lot to process</p> <div class="article-meta"> <span class="meta-item"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line> </svg> Sunday, Nov 8, 2026 </span>   <span class="meta-dot"></span> <div class="article-tags"> <a href="/tags/politics/" class="tag">
+#politics </a><a href="/tags/life/" class="tag">
+#life </a> </div>  </div> </header> <div class="prose">  <p>I don’t like talking about politics online much, but it’s no secret I’ve been pretty happy, excited, and encouraged about the Blue Tsunami results of the midterm election 5 days ago. But despite that (or maybe because of it?) I’ve been sleeping terribly ever since the results came through. Specifically, I’ve been having extremely vivid dreams, often negative in tone, and it feels like they’re happening all night long so I’m waking up every morning feeling exhausted.</p>
+<p>I feel like it might be from my entire mind and body finally starting to un-clench itself, and release a little of the hyper-vigilance and stress I’ve been holding onto for the last 10 years. I’ve felt just <em>tight</em>, afraid to fully relax, afraid that if I let go, I may never regain my composure. So now that things really do look like they’re starting to change for the better (as long as the new crop of representatives follows through on this historic wave with real <strong>actio</strong>), I think I’m finally letting that tightness go. And part of that process, apparently, is my brain releasing stress it’s been holding and protecting itself from, by way of lots and lots of vivid dreams. It’s like it’s finally digesting and processing everything more fully.</p>
+<p>In the interest of helping myself process, so I can hopefully start sleeping soundly again, I’m going to just start thinking through things that happened since 2016. Mostly I’m thinking about what happened in my own life, but some things that never technically touched my life still impacted my mental well-being, so I may just jot them down as headings without much more commentary. I don’t know if I can get through all this in a single post, or if I’ll remember everything, but I’m just going to start and see what happens.</p>
+<h2 id="2016">2016</h2>
+<h3 id="things-were-looking-up-at-first">Things were looking up at first</h3>
+<p>The last 10 years have been rough, for public and also personal/private reasons. I graduated my coding bootcamp in March 2016. My divorce, which was a multi-yeear process, was finally complete in May 2016. In June, I secured my first job in software, and felt like I was finally starting to really get a chance to build my new life.</p>
+<h3 id="election">Election</h3>
+<p>Things started feeling uncomfortable as the originally-broad field of candidates for president was gradually narrowing down, and while I hadn’t voted Republican in several years by then, I saw that side eliminating the more reasonable and moderate candidates, and leaving us with… well. You know. The worst possible option.</p>
+<p>It felt a little like a bad joke, like it could never really be a risk, but then Brexit happened, and I remember my team at work being real quiet and nervous the next day, because we knew this meant that kind of insane result could happen in our upcoming election that November, too. It was a real possibility and that scared us.</p>
+<p>Of course, it happened. I had been so excited for our first woman president, and had felt so sure she was going to win, and then she didn’t. I stayed up late watching the vote counts coming in, feeling physically sick. I thought there might still be a way to prevent it from really happening, maybe Faithless Electors would save us? I don’t even know what I thought might happen. But nothing changed it.</p>
+<p>Just 6 months earlier, my divorce from a narcissist was final, and now our entire country was going to be controlled by one. I knew exactly what to expect, the constant shifting of reality, truth, what was important, the crazy feeling, the stress that just lived permanently in the pit of the stomach. I was mortified.</p>
+<h3 id="health-issue">Health Issue</h3>
+<p>Three days after election day, I uncovered a private health issue that I don’t need to talk about here. It wasn’t too serious, wasn’t life-threatening, but it was extremely stressful and upsetting for me. The situation was ongoing for a few weeks, and while it didn’t impact my new job too much, and I only had to miss a few days of work overall, the stress I had to deal with during this time and through the treatment was heavy. I was already feeling weak from the election results, and having this hit me right on its heels really shook me up mentally, pretty badly. So that knocked me down another peg and made everything feel like it was hitting me harder.</p>
+<h2 id="2017">2017</h2>
+<h3 id="inauguration">Inauguration</h3>
+<p>I remember Inauguration Day in 2017, because it was a work day, and when I left the office, I turned on my beloved Minnesota Public Radio to catch up on the news of the day. They were playing his acceptance speech, recorded earlier. I can’t remember the words he said back then, and maybe it’s a good thing, but I remember the way they made me feel. Scared, horrified, despondent. Embarrassed. But mostly just scared. I remember I had to turn the radio off, pull over to the curb, and just scream, then cry. I had to stop sobbing, wipe my face, catch my breath, and then drive to the daycare to pick up my kids and pretend it was a normal day. But I felt horrible. Remember the lies starting right away? Remember Spicer lying about the size of the crowd for no reason? The firehose started there and never seemed to stop. I developed a constant feeling of tension in my gut, like a fist.</p>
+<h3 id="marjory-stoneman-douglas-high-school">Marjory Stoneman Douglas High School</h3>
+<p>This didn’t technically affect me personally, but it was just one of so many horrible things that hit hard. We have mass shootings on a daily basis in this country, too many for me to even be aware of, but the biggest ones are always particularly upsetting, especially when they involve kids.</p>
+<h3 id="job-loss">Job Loss</h3>
+<p>The company I was working for was a consulting company, making software for other companies. After that presidency began, a lot of those companies were scared, and they didn’t know what to expect financially. Many of them were nervous enough to pull back on spending, and they cancelled pending contracts with my company. We had less and less work to do, and more of us were on the bench. It was a generous company, and even when I was benched after the project I’d been on had ended, I was still getting my full salary and benefits. But after 5 months on the bench, I was laid off, along with dozens of my coworkers.</p>
+<p>Just to recap, I was still pretty newly divorced, with 2 small kids (aged 3 and 8 at the time). Losing my job meant losing their insurance, losing my insurance, losing any way to pay for them to go to daycare so I could look for another job. Not to mention paying rent &#x26; bills, buying groceries, putting gas in my car. Child support wasn’t enough. It was terrifying, to say the least.</p>
+<h3 id="missed-eclipse">Missed Eclipse</h3>
+<p>This one is pretty small compared to a lot of the others, but during my layoff, Terrence &#x26; I decided to drive down to Omaha, Nebraska to visit my cousin’s family, go to the best zoo in the country, and see the total solar eclipse with the kids. The zoo was awesome, and my boys had fun with my cousin’s kids. We all loved the stingray exhibit the most, where we got to feed them little cut-up fish. They were like puppies excited to get a treat! We also got to enjoy some great parks, went to a movie (with the theater all to ourselves!), and drove to a cute little town further south of Omaha that would be right in the path of totality and was having a fun little community festival that we all enjoyed.</p>
+<p>The clouds were scattered, and much to our disappointment, the sky became fully overcast just before the totality, and stayed overcast during it. The clouds broke again a few minutes after totality, so we did get to see most of the eclipse, but my oldest kid and I were particularly sad and disappointed about missing the corona. He cried a little, and I certainly felt like it, but held myself together for the sake of the kids.</p>
+<p>I don’t know if we’ll ever have a chace to personally witness a total solar eclipse again. Maybe in the big scheme of things it was a small lost opportunity, but it felt big at the time, and because of all the things going on in life around it, it felt even worse.</p>
+<h3 id="good-news---got-re-hired">Good News - Got re-hired!</h3>
+<p>That’s right, after a few months laid off and having no luck with the job hunt, my old company asked me to come back. I guess the economy didn’t crash quite as bad as our client companies had feared, so we started getting contracts again and there was plenty of work! I was able to shift from a QA Engineer position into Development/Engineering, which was actually really exciting and fun for me. Yay!</p>
+<h2 id="2018">2018</h2>
+<h3 id="metoo-movement">#MeToo Movement</h3>
+<p>I don’t know what I can say about this. It was important, but it was so hard. Sometimes bringing hidden truths out into the open makes them even more painful. That doesn’t mean it’s bad for them to be uncovered, but it just added to all the hurt I was already feeling at that time.</p>
+<h3 id="kavanaugh-nomination-hearing-and-confirmation">Kavanaugh nomination, hearing, and confirmation</h3>
+<p>Ugh. Ugh. Ugh. This whole situation messed with me in a major way. I felt like I couldn’t talk to any men for a while, even to the point that it impacted my relationship with Terrence for a few weeks. He was so patient and understanding, thank goodness. But it was beyond difficult, to put it mildly.</p>
+<h2 id="i-might-need-to-pause-here">I might need to pause here</h2>
+<p>This is getting exhausting to write. I don’t know if it’s necessarily helping me process anything. Mostly I just feel pain from remembering it all, all at once.</p>
+<p>I need to also remember that I’m still here, I’m safe, I survived. Pain doesn’t equal destruction.</p>
+<p>I haven’t even gotten to Covid yet. One of my recent nightmares this week was just a memory of suddenly being at home alone with a first grader and a sixth grader, trying to work full-time, manage their schooling, and maintain my sanity with no help. The expectations on all of us at that time were outrageous, and so many people in the community had such disappointing attitudes about trying to keep themselves and everyone around them safe. We didn’t have remote zoom learning for our kids yet, and so I had to help my children find emailed assignments and get them worked on. My youngest was just a first grader! He wasn’t in any shape to work independently for any significant amount of time! I didn’t have a partner I could tag-team with. The pressure from work was too much, the pressure from school was too much, I remember how absolutely alone I felt under social distancing.</p>
+<p>I may or may not continue this exercise on another day. I’m choosing to focus specifically on the negatives because I thought I hadn’t sufficiently processed all of them, but this might just be making me feel worse. I’m not processing, I’m just listing them off! I think I’m going to re-assess my goals here, and think about what might be a more effective way to meet them.</p>  </div> <nav class="post-nav" aria-label="Post navigation" data-astro-cid-bknnyp27><div class="post-nav-slot post-nav-slot-prev" data-astro-cid-bknnyp27><a href="/blog/2026/10/15/" class="post-nav-link" data-astro-cid-bknnyp27><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-bknnyp27><path d="m12 19-7-7 7-7" data-astro-cid-bknnyp27></path><path d="M19 12H5" data-astro-cid-bknnyp27></path></svg><span class="post-nav-text" data-astro-cid-bknnyp27><span class="post-nav-label" data-astro-cid-bknnyp27>Previous</span><span class="post-nav-title" data-astro-cid-bknnyp27>Cozy Day Off</span></span></a></div><div class="post-nav-slot post-nav-slot-next" data-astro-cid-bknnyp27><a href="/blog/2026/11/11/" class="post-nav-link post-nav-link-next" data-astro-cid-bknnyp27><span class="post-nav-text" data-astro-cid-bknnyp27><span class="post-nav-label" data-astro-cid-bknnyp27>Next</span><span class="post-nav-title" data-astro-cid-bknnyp27>Sleeping Better</span></span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-bknnyp27><path d="M5 12h14" data-astro-cid-bknnyp27></path><path d="m12 5 7 7-7 7" data-astro-cid-bknnyp27></path></svg></a></div></nav> </article> </main> <aside class="sidebar"> <div class="toc"> <div class="toc-title">On This Page</div> <nav id="toc-nav"> <a href="#2016" data-toc-link data-depth="2"> 2016 </a><a href="#things-were-looking-up-at-first" data-toc-link data-depth="3"> Things were looking up at first </a><a href="#election" data-toc-link data-depth="3"> Election </a><a href="#health-issue" data-toc-link data-depth="3"> Health Issue </a><a href="#2017" data-toc-link data-depth="2"> 2017 </a><a href="#inauguration" data-toc-link data-depth="3"> Inauguration </a><a href="#marjory-stoneman-douglas-high-school" data-toc-link data-depth="3"> Marjory Stoneman Douglas High School </a><a href="#job-loss" data-toc-link data-depth="3"> Job Loss </a><a href="#missed-eclipse" data-toc-link data-depth="3"> Missed Eclipse </a><a href="#good-news---got-re-hired" data-toc-link data-depth="3"> Good News - Got re-hired! </a><a href="#2018" data-toc-link data-depth="2"> 2018 </a><a href="#metoo-movement" data-toc-link data-depth="3"> #MeToo Movement </a><a href="#kavanaugh-nomination-hearing-and-confirmation" data-toc-link data-depth="3"> Kavanaugh nomination, hearing, and confirmation </a><a href="#i-might-need-to-pause-here" data-toc-link data-depth="2"> I might need to pause here </a> </nav> </div> <button id="back-to-top" title="Back to top" aria-label="Back to top"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"> <path d="m18 15-6-6-6 6"></path> </svg> <span>Back to top</span> </button> </aside> </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2026 The Amber Joy
+</footer> <div class="social-links" data-astro-cid-sz7xmlte>   <a href="/rss.xml" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>RSS Feed</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>RSS Feed</title> <path d="M4 11a9 9 0 0 1 9 9" data-astro-cid-sz7xmlte></path> <path d="M4 4a16 16 0 0 1 16 16" data-astro-cid-sz7xmlte></path> <circle cx="5" cy="19" r="1" data-astro-cid-sz7xmlte></circle> </svg> </a> <a href="mailto:hello@theamberjoy.com" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Email Me</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>Email Me</title> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-astro-cid-sz7xmlte></path> <polyline points="22,6 12,13 2,6" data-astro-cid-sz7xmlte></polyline> </svg> </a> </div> <div class="image-modal" id="image-modal"> <span class="close-btn" id="modal-close">&times;</span> <img id="modal-image" src="" alt=""> </div> <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("back-to-top");
+        const tocContainer = document.querySelector(".toc");
+        const tocLinks = document.querySelectorAll("[data-toc-link]");
+        const allHeadings = Array.from(
+          document.querySelectorAll(".prose h1, .prose h2, .prose h3"),
+        );
+        let isScrolling = false;
+
+        function highlightHeading(index) {
+          if (index >= 0 && index < tocLinks.length) {
+            tocLinks.forEach((link, i) => {
+              link.classList.toggle("active", i === index);
+            });
+            if (tocContainer && !isScrolling) {
+              const activeLink = tocLinks[index];
+              const linkOffset = activeLink.offsetTop;
+              const containerHeight = tocContainer.offsetHeight;
+              const linkHeight = activeLink.offsetHeight;
+              if (linkOffset < tocContainer.scrollTop) {
+                tocContainer.scrollTop = linkOffset - 10;
+              } else if (
+                linkOffset + linkHeight >
+                tocContainer.scrollTop + containerHeight
+              ) {
+                tocContainer.scrollTop =
+                  linkOffset + linkHeight - containerHeight + 10;
+              }
+            }
+          }
+        }
+
+        function onScroll() {
+          if (window.scrollY > 100) {
+            btn?.classList.add("show");
+          } else {
+            btn?.classList.remove("show");
+          }
+
+          if (isScrolling || allHeadings.length === 0 || tocLinks.length === 0)
+            return;
+
+          const docHeight = document.documentElement.scrollHeight;
+          const winHeight = window.innerHeight;
+          const headerHeight =
+            document.querySelector("header")?.offsetHeight || 80;
+
+          if (window.scrollY <= 50) {
+            highlightHeading(0);
+            return;
+          }
+          if (window.scrollY >= docHeight - winHeight - 50) {
+            highlightHeading(tocLinks.length - 1);
+            return;
+          }
+
+          const targetPosition = headerHeight + 150;
+          let currentIndex = 0;
+          for (let i = 0; i < allHeadings.length; i++) {
+            if (allHeadings[i].getBoundingClientRect().top > targetPosition) {
+              currentIndex = i > 0 ? i - 1 : 0;
+              break;
+            }
+            currentIndex = i;
+          }
+          highlightHeading(currentIndex);
+        }
+
+        window.addEventListener("scroll", onScroll);
+        onScroll();
+
+        btn?.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          if (tocContainer) tocContainer.scrollTop = 0;
+        });
+
+        tocLinks.forEach((link, index) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              const headerHeight =
+                document.querySelector("header")?.offsetHeight || 80;
+              const targetPosition =
+                target.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight -
+                20;
+              isScrolling = true;
+              highlightHeading(index);
+              window.scrollTo({ top: targetPosition, behavior: "smooth" });
+              setTimeout(() => {
+                isScrolling = false;
+                highlightHeading(index);
+              }, 800);
+            }
+          });
+        });
+
+        if (tocContainer) {
+          tocContainer.addEventListener(
+            "wheel",
+            (e) => {
+              e.stopPropagation();
+              const isAtBottom =
+                tocContainer.scrollTop + tocContainer.clientHeight >=
+                tocContainer.scrollHeight - 10;
+              const isAtTop = tocContainer.scrollTop <= 10;
+              if ((isAtBottom && e.deltaY > 0) || (isAtTop && e.deltaY < 0)) {
+                e.preventDefault();
+              }
+            },
+            { passive: false },
+          );
+        }
+
+        // Image lightbox
+        const images = document.querySelectorAll(".prose img");
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-image");
+        const modalClose = document.getElementById("modal-close");
+
+        images.forEach((img) => {
+          img.addEventListener("click", (e) => {
+            e.stopPropagation();
+            // srcset is sorted ascending, so the last candidate is the full-size image
+            const largest = img.srcset?.split(",").pop()?.trim().split(" ")[0];
+            modalImg.src = largest || img.currentSrc || img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add("show");
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+        function closeModal() {
+          modal.classList.remove("show");
+          document.body.style.overflow = "";
+        }
+
+        modal.addEventListener("click", closeModal);
+        modalClose.addEventListener("click", (e) => {
+          e.stopPropagation();
+          closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("show"))
+            closeModal();
+        });
+      });
+    </script> </body> </html>

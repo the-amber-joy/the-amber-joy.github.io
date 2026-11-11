@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en-US"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>
+  (function () {
+    const STORAGE_KEY = "astro-theme";
+    let theme = null;
+
+    if (typeof localStorage !== "undefined") {
+      theme = localStorage.getItem(STORAGE_KEY);
+    }
+
+    const prefersDark =
+      typeof matchMedia !== "undefined" &&
+      matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = theme ? theme === "dark" : prefersDark;
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script><script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js");
+    });
+  }
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#8B5CF6"><link rel="apple-touch-icon" href="/icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amber's Stuff"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Amber's Stuff" href="https://theamberjoy.com/rss.xml"><meta name="generator" content="Astro v6.3.1"><link rel="canonical" href="https://theamberjoy.com/blog/push-notifications/"><title>Push Notifications...</title><meta name="title" content="Push Notifications..."><meta name="description" content="...maybe?"><meta name="date" content="2026-09-28"><meta property="og:type" content="website"><meta property="og:url" content="https://theamberjoy.com/blog/push-notifications/"><meta property="og:title" content="Push Notifications..."><meta property="og:description" content="...maybe?"><meta property="og:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://theamberjoy.com/blog/push-notifications/"><meta property="twitter:title" content="Push Notifications..."><meta property="twitter:description" content="...maybe?"><meta property="twitter:image" content="https://theamberjoy.com/_astro/me.BAHiHmSy_25H1Yk.jpg"><style>.draft-badge[data-astro-cid-s3jkptqn]{display:inline-flex;align-items:center;flex-shrink:0;padding:.125rem .4rem;background-color:#ede9fe;color:#6d28d9;border:1px solid #c4b5fd;border-radius:999px;font-size:.65rem;line-height:1;font-weight:700;letter-spacing:.04em;text-transform:uppercase}html.dark .draft-badge[data-astro-cid-s3jkptqn]{background-color:#2e1065;color:#c4b5fd;border-color:#6d28d9}.future-badge[data-astro-cid-7bozttt3]{display:inline-flex;align-items:center;flex-shrink:0;padding:.125rem .4rem;background-color:#fce7f3;color:#be185d;border:1px solid #f9a8d4;border-radius:999px;font-size:.65rem;line-height:1;font-weight:700;letter-spacing:.04em;text-transform:uppercase}html.dark .future-badge[data-astro-cid-7bozttt3]{background-color:#500724;color:#f9a8d4;border-color:#be185d}
+</style>
+<link rel="stylesheet" href="/_astro/Header.D7pBWrmn.css">
+<link rel="stylesheet" href="/_astro/_..QS1jzVn0.css"></head> <body> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <div class="nav-left" data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Amber&#39;s Stuff</a></h2> </div> <div class="nav-center" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/blog" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/tags" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Tags </a> <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a> </div> <div class="nav-right" data-astro-cid-3ef6ksr2> <site-search data-astro-cid-qk3db3zz="true"> <button data-open-modal disabled aria-label="Search articles" aria-keyshortcuts="Control+K" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <span class="search-label" aria-hidden="true" data-astro-cid-qk3db3zz>Search</span> <kbd class="search-shortcut" style="display: none;" data-astro-cid-qk3db3zz> <kbd data-astro-cid-qk3db3zz>Ctrl</kbd><kbd data-astro-cid-qk3db3zz>K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" data-astro-cid-qk3db3zz> <div class="dialog-frame" data-astro-cid-qk3db3zz> <div class="search-container" data-astro-cid-qk3db3zz> <form class="search-form" role="search" data-astro-cid-qk3db3zz> <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <circle cx="11" cy="11" r="8" data-astro-cid-qk3db3zz></circle> <path d="m21 21-4.35-4.35" data-astro-cid-qk3db3zz></path> </svg> <input type="text" class="search-input" placeholder="Search..." autocomplete="off" spellcheck="false" data-astro-cid-qk3db3zz> <button type="button" class="search-clear" style="display: none;" data-astro-cid-qk3db3zz> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-qk3db3zz> <line x1="18" y1="6" x2="6" y2="18" data-astro-cid-qk3db3zz></line> <line x1="6" y1="6" x2="18" y2="18" data-astro-cid-qk3db3zz></line> </svg> </button> </form> <div class="results-info" style="display: none;" data-astro-cid-qk3db3zz> <span class="results-count" data-astro-cid-qk3db3zz></span> results for <mark class="search-term" data-astro-cid-qk3db3zz></mark> </div> <div class="search-results" data-astro-cid-qk3db3zz> <div class="search-loading" style="display: none;" data-astro-cid-qk3db3zz> <div class="spinner" data-astro-cid-qk3db3zz></div> <span data-astro-cid-qk3db3zz>Loading...</span> </div> <div class="search-empty" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>No results found for "<span class="search-term" data-astro-cid-qk3db3zz></span>"</p> </div> <div class="search-error" style="display: none;" data-astro-cid-qk3db3zz> <p data-astro-cid-qk3db3zz>Search is unavailable. Please try again later.</p> </div> <ul class="results-list" data-astro-cid-qk3db3zz></ul> </div> </div> </div> </dialog> </site-search> <script>
+  (() => {
+    const openBtn = document.querySelector("button[data-open-modal]");
+    const shortcut = openBtn?.querySelector(".search-shortcut");
+    if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+    const platformKey = shortcut.querySelector("kbd");
+    if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+      platformKey.textContent = "⌘";
+      openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+    }
+    shortcut.style.display = "";
+  })();
+</script> <script type="module" src="/_astro/SearchModal.astro_astro_type_script_index_0_lang.qN23F6-x.js"></script> <button id="menu-toggle" class="nav-btn mobile-only" title="Menu" aria-label="Toggle menu" aria-expanded="false" data-astro-cid-3ef6ksr2> <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-3ef6ksr2></line> </svg> </button> <button id="push-toggle" class="nav-btn" title="Enable notifications" aria-label="Toggle notifications" aria-pressed="false" hidden data-astro-cid-3ef6ksr2> <svg id="push-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" data-astro-cid-3ef6ksr2></path> <path d="M13.73 21a2 2 0 0 1-3.46 0" data-astro-cid-3ef6ksr2></path> </svg> </button> <button id="theme-toggle" class="nav-btn" title="Toggle theme" aria-label="Toggle theme" data-astro-cid-3ef6ksr2> <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3ef6ksr2> <circle cx="12" cy="12" r="5" data-astro-cid-3ef6ksr2></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-3ef6ksr2></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-3ef6ksr2></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-3ef6ksr2></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-3ef6ksr2></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-3ef6ksr2></line> </svg> </button> </div> </nav> </header> <script type="module">const s=document.getElementById("theme-toggle"),c=document.getElementById("theme-icon"),l="astro-theme",a='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',d='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';function o(){return document.documentElement.classList.contains("dark")}function i(){c&&(c.innerHTML=o()?a:d)}function m(){const e=o()?"light":"dark";document.documentElement.classList.toggle("dark",e==="dark"),typeof localStorage<"u"&&localStorage.setItem(l,e),i(),document.dispatchEvent(new CustomEvent("ecThemeChange")),document.dispatchEvent(new Event("themeChange"))}i();s?.addEventListener("click",m);const t=document.getElementById("menu-toggle"),n=document.querySelector(".nav-center");t?.addEventListener("click",()=>{const e=n?.classList.toggle("show");t.setAttribute("aria-expanded",String(!!e))});n?.addEventListener("click",e=>{e.target.closest("a")&&(n.classList.remove("show"),t?.setAttribute("aria-expanded","false"))});</script> <script>(function(){const PUSH_WORKER_URL = "https://amber-blog-push.the-amber-joy.workers.dev";
+const VAPID_PUBLIC_KEY = "BO1XQeprhawoEt5nFaFIi2Xu5BGEvWm13t5eFMszV6I7-xmU1QW_Qx9MwC_tUhyLj6EjIN5JKWJpxJFBsURZTsk";
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+    const base64 = (base64String + padding)
+      .replace(/-/g, "+")
+      .replace(/_/g, "/");
+    const rawData = atob(base64);
+    return Uint8Array.from([...rawData].map((c) => c.charCodeAt(0)));
+  }
+
+  async function getSubscription() {
+    if (!("serviceWorker" in navigator)) return null;
+    const registration = await navigator.serviceWorker.ready;
+    return registration.pushManager.getSubscription();
+  }
+
+  function updatePushButton(pushToggle, isSubscribed) {
+    pushToggle.setAttribute("aria-pressed", String(isSubscribed));
+    pushToggle.title = isSubscribed
+      ? "Disable notifications"
+      : "Enable notifications";
+    pushToggle.classList.toggle("active", isSubscribed);
+  }
+
+  async function subscribeToPush() {
+    const registration = await navigator.serviceWorker.ready;
+    const subscription = await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+    });
+
+    await fetch(`${PUSH_WORKER_URL}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subscription }),
+    });
+  }
+
+  async function unsubscribeFromPush(subscription) {
+    await fetch(`${PUSH_WORKER_URL}/unsubscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ endpoint: subscription.endpoint }),
+    });
+
+    await subscription.unsubscribe();
+  }
+
+  async function initPushToggle() {
+    const pushToggle = document.getElementById("push-toggle");
+    if (!pushToggle) return;
+    if (!("serviceWorker" in navigator) || !("PushManager" in window)) return;
+
+    pushToggle.hidden = false;
+
+    const existing = await getSubscription();
+    updatePushButton(pushToggle, !!existing);
+
+    pushToggle.addEventListener("click", async () => {
+      const subscription = await getSubscription();
+
+      if (subscription) {
+        await unsubscribeFromPush(subscription);
+        updatePushButton(pushToggle, false);
+        return;
+      }
+
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") return;
+
+      await subscribeToPush();
+      updatePushButton(pushToggle, true);
+    });
+  }
+
+  initPushToggle();
+})();</script> <div class="page-container"> <main> <article> <header class="article-header"> <h1 class="article-title"> Push Notifications...   </h1> <p class="article-description">...maybe?</p> <div class="article-meta"> <span class="meta-item"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line> </svg> Monday, Sep 28, 2026 </span>   <span class="meta-dot"></span> <div class="article-tags"> <a href="/tags/blog/" class="tag">
+#blog </a><a href="/tags/tech/" class="tag">
+#tech </a> </div>  </div> </header> <div class="prose">  <p>I’ve been working on getting this blog set up to work as an installable app, with push notifications. I don’t know if it’s going to work yet, but once this post is published, I hope to find out! I don’t think it’s a very useful feature, but I wanted to learn how to do it.</p>
+<p>Let’s see if this works!</p>  </div> <nav class="post-nav" aria-label="Post navigation" data-astro-cid-bknnyp27><div class="post-nav-slot post-nav-slot-prev" data-astro-cid-bknnyp27><a href="/blog/first-post/" class="post-nav-link" data-astro-cid-bknnyp27><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-bknnyp27><path d="m12 19-7-7 7-7" data-astro-cid-bknnyp27></path><path d="M19 12H5" data-astro-cid-bknnyp27></path></svg><span class="post-nav-text" data-astro-cid-bknnyp27><span class="post-nav-label" data-astro-cid-bknnyp27>Previous</span><span class="post-nav-title" data-astro-cid-bknnyp27>Hi! This is my blog</span></span></a></div><div class="post-nav-slot post-nav-slot-next" data-astro-cid-bknnyp27><a href="/blog/noisy-yard-coyote/" class="post-nav-link post-nav-link-next" data-astro-cid-bknnyp27><span class="post-nav-text" data-astro-cid-bknnyp27><span class="post-nav-label" data-astro-cid-bknnyp27>Next</span><span class="post-nav-title" data-astro-cid-bknnyp27>Another coyote in the yard</span></span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-bknnyp27><path d="M5 12h14" data-astro-cid-bknnyp27></path><path d="m12 5 7 7-7 7" data-astro-cid-bknnyp27></path></svg></a></div></nav> </article> </main>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2026 The Amber Joy
+</footer> <div class="social-links" data-astro-cid-sz7xmlte>   <a href="/rss.xml" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>RSS Feed</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>RSS Feed</title> <path d="M4 11a9 9 0 0 1 9 9" data-astro-cid-sz7xmlte></path> <path d="M4 4a16 16 0 0 1 16 16" data-astro-cid-sz7xmlte></path> <circle cx="5" cy="19" r="1" data-astro-cid-sz7xmlte></circle> </svg> </a> <a href="mailto:hello@theamberjoy.com" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Email Me</span> <svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-astro-cid-sz7xmlte> <title>Email Me</title> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-astro-cid-sz7xmlte></path> <polyline points="22,6 12,13 2,6" data-astro-cid-sz7xmlte></polyline> </svg> </a> </div> <div class="image-modal" id="image-modal"> <span class="close-btn" id="modal-close">&times;</span> <img id="modal-image" src="" alt=""> </div> <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("back-to-top");
+        const tocContainer = document.querySelector(".toc");
+        const tocLinks = document.querySelectorAll("[data-toc-link]");
+        const allHeadings = Array.from(
+          document.querySelectorAll(".prose h1, .prose h2, .prose h3"),
+        );
+        let isScrolling = false;
+
+        function highlightHeading(index) {
+          if (index >= 0 && index < tocLinks.length) {
+            tocLinks.forEach((link, i) => {
+              link.classList.toggle("active", i === index);
+            });
+            if (tocContainer && !isScrolling) {
+              const activeLink = tocLinks[index];
+              const linkOffset = activeLink.offsetTop;
+              const containerHeight = tocContainer.offsetHeight;
+              const linkHeight = activeLink.offsetHeight;
+              if (linkOffset < tocContainer.scrollTop) {
+                tocContainer.scrollTop = linkOffset - 10;
+              } else if (
+                linkOffset + linkHeight >
+                tocContainer.scrollTop + containerHeight
+              ) {
+                tocContainer.scrollTop =
+                  linkOffset + linkHeight - containerHeight + 10;
+              }
+            }
+          }
+        }
+
+        function onScroll() {
+          if (window.scrollY > 100) {
+            btn?.classList.add("show");
+          } else {
+            btn?.classList.remove("show");
+          }
+
+          if (isScrolling || allHeadings.length === 0 || tocLinks.length === 0)
+            return;
+
+          const docHeight = document.documentElement.scrollHeight;
+          const winHeight = window.innerHeight;
+          const headerHeight =
+            document.querySelector("header")?.offsetHeight || 80;
+
+          if (window.scrollY <= 50) {
+            highlightHeading(0);
+            return;
+          }
+          if (window.scrollY >= docHeight - winHeight - 50) {
+            highlightHeading(tocLinks.length - 1);
+            return;
+          }
+
+          const targetPosition = headerHeight + 150;
+          let currentIndex = 0;
+          for (let i = 0; i < allHeadings.length; i++) {
+            if (allHeadings[i].getBoundingClientRect().top > targetPosition) {
+              currentIndex = i > 0 ? i - 1 : 0;
+              break;
+            }
+            currentIndex = i;
+          }
+          highlightHeading(currentIndex);
+        }
+
+        window.addEventListener("scroll", onScroll);
+        onScroll();
+
+        btn?.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          if (tocContainer) tocContainer.scrollTop = 0;
+        });
+
+        tocLinks.forEach((link, index) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              const headerHeight =
+                document.querySelector("header")?.offsetHeight || 80;
+              const targetPosition =
+                target.getBoundingClientRect().top +
+                window.scrollY -
+                headerHeight -
+                20;
+              isScrolling = true;
+              highlightHeading(index);
+              window.scrollTo({ top: targetPosition, behavior: "smooth" });
+              setTimeout(() => {
+                isScrolling = false;
+                highlightHeading(index);
+              }, 800);
+            }
+          });
+        });
+
+        if (tocContainer) {
+          tocContainer.addEventListener(
+            "wheel",
+            (e) => {
+              e.stopPropagation();
+              const isAtBottom =
+                tocContainer.scrollTop + tocContainer.clientHeight >=
+                tocContainer.scrollHeight - 10;
+              const isAtTop = tocContainer.scrollTop <= 10;
+              if ((isAtBottom && e.deltaY > 0) || (isAtTop && e.deltaY < 0)) {
+                e.preventDefault();
+              }
+            },
+            { passive: false },
+          );
+        }
+
+        // Image lightbox
+        const images = document.querySelectorAll(".prose img");
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-image");
+        const modalClose = document.getElementById("modal-close");
+
+        images.forEach((img) => {
+          img.addEventListener("click", (e) => {
+            e.stopPropagation();
+            // srcset is sorted ascending, so the last candidate is the full-size image
+            const largest = img.srcset?.split(",").pop()?.trim().split(" ")[0];
+            modalImg.src = largest || img.currentSrc || img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add("show");
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+        function closeModal() {
+          modal.classList.remove("show");
+          document.body.style.overflow = "";
+        }
+
+        modal.addEventListener("click", closeModal);
+        modalClose.addEventListener("click", (e) => {
+          e.stopPropagation();
+          closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("show"))
+            closeModal();
+        });
+      });
+    </script> </body> </html>
